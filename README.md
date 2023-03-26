@@ -7,7 +7,7 @@
 ## Pembuatan aplikasi Menggunakan:
 - [Laravel](https://laravel.com/docs)
 - [Livewire](https://laravel-livewire.com/)
-- [TailwindCss](https://tailwindcss.com/)
+- [Tailwindcss](https://tailwindcss.com/)
 
 ### Patner Kontribusi 
 - **[Hasudungan Sitorus](https://twitter.com/jung_doeng)**
