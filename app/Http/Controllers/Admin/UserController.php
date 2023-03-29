@@ -3,16 +3,19 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Workexperience;
+use App\Models\User;
 use Illuminate\Http\Request;
 
-class WorkExperienceController extends Controller
+class UserController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        dd('Test');
-
-        return view('admin.workExperiences.index');
+        return view('admin.users.index');
     }
 
     /**
@@ -39,10 +42,10 @@ class WorkExperienceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Workexperience  $workexperience
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Workexperience $workexperience)
+    public function show(User $user)
     {
         //
     }
@@ -50,10 +53,10 @@ class WorkExperienceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Workexperience  $workexperience
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(Workexperience $workexperience)
+    public function edit(User $user)
     {
         //
     }
@@ -62,10 +65,10 @@ class WorkExperienceController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Workexperience  $workexperience
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Workexperience $workexperience)
+    public function update(Request $request, User $user)
     {
         //
     }
@@ -73,10 +76,10 @@ class WorkExperienceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Workexperience  $workexperience
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Workexperience $workexperience)
+    public function destroy(User $user)
     {
         //
     }
