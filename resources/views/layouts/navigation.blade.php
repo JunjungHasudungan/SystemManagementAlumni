@@ -15,7 +15,7 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
 
 
-                    @if (auth()->user()->role_id == 1)
+                    @if ( auth()->user()->role_id == 1)
 
                         <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                             {{ __('Dashboard') }}
@@ -26,8 +26,8 @@
                         </x-nav-link> --}}
 
 
-                        <x-nav-link :href="route('admin.users.index')" :active="request()->routeIs('admin.users.index')">
-                            {{ __('Pengalaman Pekerjaan') }}
+                        <x-nav-link :href="route('admin.alumnis.index')" :active="request()->routeIs('admin.alumnis.index')">
+                            {{ __('Alumus') }}
                         </x-nav-link>
 
                     @endif

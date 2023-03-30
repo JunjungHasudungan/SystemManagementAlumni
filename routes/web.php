@@ -33,12 +33,16 @@ Route::group(['middleware' => 'auth'], function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+    // Route::resources([
+    //     'users'                 => UserController::class,
+    // ]);
+
     // route admin
-    Route::group(['middleware' => 'role:admin', 'prefix' => 'admin', 'as', 'admin.'], function(){
+    Route::group(['middleware' => 'role:admin', 'prefix' => 'admin', 'as' => 'admin.'], function(){
 
         Route::resources([
-            'workExperiences'       => WorkExperienceController::class,
-            'users'                 => UserController::class,
+            'alumnis'                   => UserController::class,
+            'workExperiences'           => WorkExperienceController::class,
         ]);
 
     });
