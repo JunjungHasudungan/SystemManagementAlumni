@@ -10,7 +10,10 @@ use Livewire\Component;
 class Alumni extends Component
 {
     public  $alumnis,
+            $alumni,
             $name,
+            $status,
+            $address,
             $email,
             $is_create = false,
             $is_edit = false,
@@ -60,10 +63,10 @@ class Alumni extends Component
         dd('Testing Open Edit Modal');
     }
 
-    public function detailAlumni($id_alumnu)
+    public function detailAlumni($id_alumni)
     {
-        dd('Testing open detail alumni');
         $this->openDetailModal();
-
+        $alumni = User::with('role')->find($id_alumni);
+        $this->alumni = $alumni;
     }
 }

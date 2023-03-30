@@ -15,6 +15,8 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
+            $table->string('address')->after('name');
+            $table->string('status')->after('address');
             $table->foreignIdFor(Role::class)->after('password');
         });
     }

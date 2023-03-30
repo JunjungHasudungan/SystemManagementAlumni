@@ -21,12 +21,16 @@ class UserSeeder extends Seeder
                 'email'     => 'nicholas@gmail.com',
                 'password'  => bcrypt('password'),
                 'role_id'   => 1,
+                'address'   => 'Bandung',
+                'status'    => 'Lajang',
             ],
             [
                 'name'      => 'Hasudungan',
                 'email'     => 'hasudungan@gmail.com',
                 'password'  => bcrypt('password'),
                 'role_id'   => 2,
+                'address'   => 'Bandung',
+                'status'    => 'Lajang',
             ]
         ];
         User::insert($users);
